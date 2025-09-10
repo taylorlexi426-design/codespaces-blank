@@ -1,0 +1,74 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #111;
+  color: #eee;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 40px;
+  background: #181818;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+/* Logo */
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #a259ff; /* Purple */
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.hamburger span {
+  display: block;
+  width: 28px;
+  height: 4px;
+  background: #a259ff; /* Purple */
+  border-radius: 2px;
+}
+
+/* Nav styles */
+nav ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #eee;
+  font-size: 1.1rem;
+  transition: color 0.2s, background 0.2s;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #fff;
+  background: #a259ff; /* Purple on hover */
+}
+
+/* Hero section
